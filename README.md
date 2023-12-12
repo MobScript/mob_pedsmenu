@@ -25,7 +25,14 @@ This GTA V script allows players to change their character's gender and select f
 The script offers customization through the `allowedPeds` table in the script file. This table defines the allowed peds for each player.
 
 ```lua
+-- Table containing allowed peds for each player
 local allowedPeds = {
     ["char1:iddemo"] = {"nameped_1", "nameped_2", "nameped_3"},  -- User 1
     ["char1:iddemo"] = {"nameped_1"}  -- User 2
+}
+
+-- List of allowed player identifiers access pedsmenu
+local allowedIdentifiers = {
+    "char1:iddemo",  -- User 1
+    "char1:iddemo"   -- User 2
 }
